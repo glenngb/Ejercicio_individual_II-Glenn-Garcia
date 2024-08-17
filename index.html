@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5" style="max-width: 50%;">
+        <h2>Registro de Proveedores y Artículos</h2>
+        <form id="formulario" class="shadow p-4 mb-5 bg-white rounded">
+            <div class="mb-3">
+                <label for="nombreProveedor" class="form-label">Nombre del Proveedor</label>
+                <input type="text" class="form-control" id="nombreProveedor" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email del Proveedor</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono del Proveedor</label>
+                <input type="number" class="form-control" id="telefono" required>
+            </div>
+            <div class="mb-3">
+                <label for="nombreArticulo" class="form-label">Nombre del Artículo</label>
+                <input type="text" class="form-control" id="nombreArticulo" required>
+            </div>
+            <div class="mb-3">
+                <label for="precioArticulo" class="form-label">Precio del Artículo</label>
+                <input type="number" class="form-control" id="precioArticulo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+        
+        <h2 class="mt-5 my-5">Listado de Proveedores y Artículos</h2>
+        <table id="dataTable" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Proveedor</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Artículo</th>
+                    <th>Precio</th>
+                    <th>Impuesto</th> <!-- Nueva columna -->
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer class="footer bg-dark text-white text-center">
+        &copy; 2024 Ejercicio individual II | Módulo 4 | Glenn Garcia
+      </footer>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
